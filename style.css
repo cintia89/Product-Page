@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: #cbcbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% da altura da tela */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; /* 3 colunas, sendo 1fr uma frasao de cada coluna*/
+    gap: 50px; /* espaçamento entre as colunas */
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 350px; /* largura */
+    height: 593px;/* altura */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0, 25);
+    padding: 20px;
+}
+
+.carrosel{
+    overflow: hidden; /* esconde a imagem quando estrapola o tamanho */
+    width: 310px;
+    height: 270px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.caixa-img{
+    display: flex;
+    transition: transforms 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel img{
+    width: 310px;
+    height: 270px;
+}
+
+h2{
+    font-size: 18px; /* tamanho da fonte*/
+    margin-bottom: 20px;
+    font-weight: 700; /* aparencia de negrito*/
+}
+
+.oferta{
+    color: #6d6d6d;
+    text-decoration: line-through; /* para ficar linha sobre o texto*/
+}
+
+.preco{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cores{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* ficar circulo */
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.cor--cinza{
+    background-color: #9c9c9c;
+}
+.cor--vermelho{
+    background-color: #f70505;
+}
+.cor--golden{
+    background-color: #f8cc06;
+}
+.cor--prata{
+    background-color: #646464;
+}
+.cor--preto{
+    background-color: #000000;
+}
+
+button{
+    background-color: #28bb1b;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    height: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 16px;
+    color: #6d6d6d;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.selecionado{
+    border: 2px solid rgba(59, 209, 5);
+}
